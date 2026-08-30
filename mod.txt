@@ -1,0 +1,50 @@
+{
+    "name": "UT6 Native Fork",
+    "description": "Community fork of Ultimate Trainer 6 with a native in-game menu instead of the web UI. Original mod by Pierre Josselin.",
+    "author": "Pierre Josselin (original mod), community fork",
+    "version": "6.3.3-native-fork",
+    "hooks": [
+        {
+            "hook_id": "core/lib/setups/coresetup",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/core/lib/setups/coresetup.lua"
+        },
+        {
+            "hook_id": "lib/managers/localizationmanager",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/lib/managers/localizationmanager.lua"
+        },
+        {
+            "hook_id": "lib/managers/menumanager",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/lib/managers/menumanager.lua"
+        },
+        {
+            "hook_id": "lib/managers/skilltreemanager",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/lib/managers/skilltreemanager.lua"
+        },
+        {
+            "hook_id": "lib/network/matchmaking/networkaccountepic",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/lib/network/matchmaking/networkaccountepic.lua"
+        },
+        {
+            "hook_id": "lib/network/matchmaking/networkaccountsteam",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/lib/network/matchmaking/networkaccountsteam.lua"
+        },
+        {
+            "hook_id": "lib/setups/gamesetup",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/lib/setups/gamesetup.lua"
+        },
+        {
+            "hook_id": "lib/states/ingamewaitingforplayers",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/lib/states/ingamewaitingforplayers.lua"
+        },
+        {
+            "hook_id": "*",
+            "script_path": "payday-2-ultimate-trainer-6-mod/hooks/all.lua"
+        }
+    ],
+    "persist_scripts": [
+        {
+            "global": "ut_persist_scripts_update",
+            "script_path": "payday-2-ultimate-trainer-6-mod/persist-scripts/update.lua"
+        }
+    ]
+}
